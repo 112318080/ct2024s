@@ -77,7 +77,7 @@
                 .text("LPIPS");
 
             var filteredData = data.filter(function(d) {
-                return d.SSIM >= 0.9 && d.SSIM <= 0.6 && d.LPIPS >= 0.9 && d.LPIPS <= 0.6;
+                return d.SSIM <= 0.5 && d.SSIM >= 0.2 && d.LPIPS >= 0.2 && d.LPIPS <= 0.1;
             });
 
             // 创建散点
